@@ -14,7 +14,7 @@ export class ProductData implements InMemoryDbService {
         description: 'Leaf rake with 48-inch wooden handle',
         price: 19.95,
         starRating: 3.2,
-        imageUrl: 'assets/images/leaf_rake.png',
+        imageUrl: 'https://cdn.jsdelivr.net/gh/Saravanasakthivel/Angular-routing@dev/src/assets/images/leaf_rake.png',
         category: 'Garden',
         tags: ['rake', 'leaf', 'yard', 'home']
       },
@@ -26,7 +26,7 @@ export class ProductData implements InMemoryDbService {
         description: '15 gallon capacity rolling garden cart',
         price: 32.99,
         starRating: 4.2,
-        imageUrl: 'assets/images/garden_cart.png',
+        imageUrl: 'https://cdn.jsdelivr.net/gh/Saravanasakthivel/Angular-routing@dev/src/assets/images/garden_cart.png',
         category: 'Garden'
       },
       {
@@ -37,7 +37,7 @@ export class ProductData implements InMemoryDbService {
         description: 'Curved claw steel hammer',
         price: 8.9,
         starRating: 4.8,
-        imageUrl: 'assets/images/hammer.png',
+        imageUrl: 'https://cdn.jsdelivr.net/gh/Saravanasakthivel/Angular-routing@dev/src/assets/images/hammer.png',
         category: 'Toolbox',
         tags: ['tools', 'hammer', 'construction']
       },
@@ -49,7 +49,7 @@ export class ProductData implements InMemoryDbService {
         description: '15-inch steel blade hand saw',
         price: 11.55,
         starRating: 3.7,
-        imageUrl: 'assets/images/saw.png',
+        imageUrl: 'https://cdn.jsdelivr.net/gh/Saravanasakthivel/Angular-routing@dev/src/assets/images/saw.png',
         category: 'Toolbox'
       },
       {
@@ -60,7 +60,7 @@ export class ProductData implements InMemoryDbService {
         description: 'Standard two-button video game controller',
         price: 35.95,
         starRating: 4.6,
-        imageUrl: 'assets/images/xbox-controller.png',
+        imageUrl: 'https://cdn.jsdelivr.net/gh/Saravanasakthivel/Angular-routing@dev/src/assets/images/xbox-controller.png',
         category: 'Gaming'
       }
     ];

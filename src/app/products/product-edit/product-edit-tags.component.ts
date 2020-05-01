@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { NgForm } from '@angular/forms';
 
 import { Product } from '../product';
 
@@ -7,13 +8,20 @@ import { Product } from '../product';
   templateUrl: './product-edit-tags.component.html'
 })
 export class ProductEditTagsComponent implements OnInit {
+   @ViewChild(NgForm, {static: false}) productForm: NgForm;
   errorMessage: string;
   newTags = '';
-  product = { id: 1, category: 'test', tags: ['test'] };
+   product:Product;
 
   constructor(private route: ActivatedRoute) { }
 
   ngOnInit(): void {
+    this.route.parent.data.subscribe(data =>{
+      if(this.productForm){
+        this.productForm.reset();
+      }
+      this.product=data['resolvedData'].product;
+    })
   }
 
   // Add the defined tags
